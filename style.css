@@ -1,0 +1,128 @@
+body{
+	background-color: black;
+}
+
+#navbar{
+	list-style-type: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #29366b;
+	border-radius: 5px;
+}
+#navbar li{
+	float: right;
+	padding: 25px 25px 25px 25px;
+	font-family: Consolas,monaco,monospace; 
+} 
+
+#navbar li a{
+	display: inline-flex;
+	color: white;
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+#navbar li a:hover:not(.active){
+	background-color: black;
+}
+
+.active{
+	background-color: black;
+}
+
+
+p{
+	background-color: white;
+	color: black;
+	margin-left: 150px;
+	margin-right: 150px;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.search-bar{
+	width: 100%;
+	max-width: 700px;
+	background: white;
+	color: black;
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding: 10px 20px;
+}
+
+.search-bar input{
+	background: transparent;
+	flex: 1;
+	border:0;
+	outline: none;
+	padding: 24px 20px;
+	font-size: 20px;
+	color: black;
+}
+
+::placeholder{
+	color: black;
+	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+}
+
+.search-bar button img{
+	width: 25px;
+}
+
+.search-bar button{
+	border: 0;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: #29366b;
+	cursor: pointer;
+}
+
+#valve{
+	padding: 10px;	
+	width: 200px; 
+	height:75px;
+}
+
+footer{
+	background-color: #29366b;
+	color: black	;
+	border-radius: 5px;
+}
+
+footer div{
+	padding-top: 50px;
+	padding-left: 190px;
+	padding-bottom: 10px;
+	padding-right: 	10px;
+	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+}
+
+.fotoflex{
+	display: flex;
+	justify-content: space-between;
+	padding-right: 200px;
+	padding-left: 150px;
+
+}
+
+image{
+	background-image: url(img/background3.jpg);
+}
+
+#bgimg{
+	background-image: url(img);
+	background-size: cover;
+	background-position: center;
+}
