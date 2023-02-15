@@ -1,142 +1,206 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		body{
-      background-color: black;
-    }
-
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Top 10 Teams in CS:GO</title>
+  <link rel="stylesheet" type="text/css" href="css.style.css">
+  <style>
     #navbar{
-	       list-style-type: none;
-	       overflow: hidden;
-	       margin: 0;
-	       padding: 0;
-	       overflow: hidden;
-	       background-color: #29366b;
-	       border-radius: 5px;
+         list-style-type: none;
+         overflow: hidden;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: #29366b;
+         border-radius: 5px;
         }
         #navbar li{
-	       float: right;
-	       padding: 25px 25px 25px 25px;
-	       font-family: Consolas,monaco,monospace; 
+         float: right;
+         padding: 25px 25px 25px 25px;
+         font-family: Consolas,monaco,monospace; 
         } 
 
         #navbar li a{
-	       display: inline-flex;
-	       color: white;
-	       padding: 14px 16px;
-	       text-align: center;
-	       text-decoration: none;
-	       border-radius: 10px;
+         display: inline-flex;
+         color: white;
+         padding: 14px 16px;
+         text-align: center;
+         text-decoration: none;
+         border-radius: 5px;
         } 
         #navbar li a:hover:not(.active){
-	       background-color: black;
+         background-color: black;
         }
 
         .active{
-	       background-color: black;
+         background-color: black;
         }
+
         #valve{
-	      padding: 10px;	
-	      width: 200px; 
-	      height:75px;
-        }
+           padding: 10px; 
+         width: 200px; 
+         height:75px;
+}
 
-        table{
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-          color: white;
-        }
-
-        td, th {
-           border: 0px solid black;
-           text-align: left;
-           padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #29366b;
-        }
-        table .sh1ro{
-        	background-color: yellow;
-        }
-
-	</style>
-	<title>Players</title>
+  </style>
+  <title>Teams</title>
 </head>
 <body>
-	<ul id="navbar">
-		<img id="valve" src="img/valve.png" >
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/trophies.html">Trophies</a></li>
-		<li><a class="active" href="file:///C:/Users/HP/Desktop/CSGOhub/players.html">Players</a></li>
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/teams.html">Teams</a></li>
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/index.html">Home</a></li>
-	</ul>
- 
- <br><br><br>
- <table class="Players">
-  <tr>
-    <th>Player</th>
-    <th>Ranking</th>
-    <th>Rating</th>
-  </tr>
-  <tr>
-    <td>Dmitry "sh1ro" Sokolov</td>
-    <td>1</td>
-    <td>1.25</td>
-  </tr>
-  <tr>
-    <td>Oleksandr "s1mple" Kostilyev</td>
-    <td>2</td>
-    <td>1.24</td>
-  </tr>
-  <tr>
-    <td>Mathieu "ZywOo" Herbaut</td>
-    <td>3</td>
-    <td>1.24</td>
-  </tr>
-  <tr>
-    <td>Benjamin "blameF" Bremer</td>
-    <td>4</td>
-    <td>1.31</td>
-  </tr>
-  <tr>
-    <td>Nikola "NiKo" Kovac</td>
-    <td>5</td>
-    <td>1.25</td>
-  </tr>
-  <tr>
-    <td>Sergey "Ax1Le" Rykhotorov</td>
-    <td>6</td>
-    <td>1.20</td>
-  </tr>
-  <tr>
-    <td>Martin "stavn" Lund</td>
-    <td>7</td>
-    <td>1.15</td>
-  </tr>
-  <tr>
-    <td>Ilya "mONESY" Osipov</td>
-    <td>8</td>
-    <td>1.21</td>
-  </tr>
-  <tr>
-    <td>David "frozen" Cernansky</td>
-    <td>9</td>
-    <td>1.16</td>
-  </tr>
-  <tr>
-    <td>Kaike "KSCERATO" Cerato</td>
-    <td>10</td>
-    <td>1.34</td>
-  </tr>
-</table>
- <br><br>
+    <ul id="navbar">
+    <img id="valve" src="img/valve.png" >
+    <li><a href="file:///C:/Users/HP/Desktop/CSGOhub/trophies.html">Trophies</a></li>
+    <li><a href="file:///C:/Users/HP/Desktop/CSGOhub/players.html">Players</a></li>
+    <li><a class="active" href="teams.html">Teams</a></li>
+    <li><a href="file:///C:/Users/HP/Desktop/CSGOhub/index.html">Home</a></li>
+  </ul>   
+</head>
+<body>
+
+  <header>
+    <h1>Top 10 Teams in CS:GO</h1>
+  </header>
+
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Top 10 Teams in CS:GO</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Top 10 Teams in CS:GO</h1>
+  </header>
+
+  <main>
+
+    <div class="team-list">
+      <div class="team-card">
+        <img src="images/astralis.png" width="300" alt="Astralis">
+        <h5>Astralis</h5>
+        <p>Denmark</p>
+        <p>Rank: 1</p>
+      </div>
+      <div class="team-card">
+        <img src="images/navi.png" width="300" alt="Natus Vincere">
+        <h2>Natus Vincere</h2>
+        <p>Ukraine</p>
+        <p>Rank: 2</p>
+      </div>
+      
+      <div class="team-card">
+        <img src="images/vitaly.png" width="300" alt="Vitality">
+        <h2>Vitality</h2>
+        <p>France</p>
+        <p>Rank: 4</p>
+      </div>
+      <div class="team-card">
+        <img src="images/evil.png" width="300" alt="Evil Geniuses">
+        <h2>Evil Geniuses</h2>
+        <p>United States</p>
+        <p>Rank: 5</p>
+      </div>
+      <div class="team-card">
+        <img src="images/heroic.png" width="300" alt="Heroic">
+        <h2>Heroic</h2>
+        <p>Denmark</p>
+        <p>Rank: 6</p>
+      </div>
+      <div class="team-card">
+        <img src="images/furia.png" width="300" alt="FURIA Esports">
+        <h2>FURIA Esports</h2>
+        <p>Brazil</p>
+        <p>Rank: 7</p>
+      </div>
+      <div class="team-card">
+        <img src="images/Complexity.png" width="300" alt="Complexity">
+        <h2>Complexity</h2>
+        <p>United States</p>
+        <p>Rank: 8</p>
+      </div>
+      <div class="team-card">
+        <img src="images/ence.png" width="300" alt="ENCE">
+        <h2>ENCE</h2>
+        <p>Finland</p>
+        <p>Rank: 9</p>
+      </div>
+      <div class="team-card">
+        <img src="images/bne.png" width="300" alt="BNE">
+        <h2>BNE</h2>
+        <p>KOSOVO</p>
+        <p>Rank: 10</p>
+      </div>
+  </main>
 
 
- <br><br>
+<div class="container">
 
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="images/astralis.png" width="100" style="width:30%">
+  </div>
 
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="images/navi.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="images/g2.png">3 / 6</div>
+      <img src="images" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="images/vitaly.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="img_nature_wide.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="img_snow_wide.jpg" style="width:100%">
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+
+      <img  class="demo cursor" src="images/astralis.png"  style="width:100%" onclick="currentSlide(1)" alt="The Woods" >
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="images/navi.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/faze.png" style="width:110%"  onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/vitaly.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/bne.png" style="width:80%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/heroic.png" style="width:120%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+  <footer>
+    <p>&copy; 2023 Top 10 Teams in CS:GO</p>
+  </footer>
+<script src="js/main.js"></script>
 </body>
 </html>

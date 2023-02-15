@@ -1,128 +1,177 @@
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
 body{
-	background-color: black;
-}
-
-#navbar{
-	list-style-type: none;
-	overflow: hidden;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #29366b;
-	border-radius: 5px;
-}
-#navbar li{
-	float: right;
-	padding: 25px 25px 25px 25px;
-	font-family: Consolas,monaco,monospace; 
-} 
-
-#navbar li a{
-	display: inline-flex;
-	color: white;
-	padding: 14px 16px;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 5px;
-}
-#navbar li a:hover:not(.active){
-	background-color: black;
-}
-
-.active{
-	background-color: black;
+  background-color: gray;
 }
 
 
-p{
-	background-color: white;
-	color: black;
-	margin-left: 150px;
-	margin-right: 150px;
-	padding: 10px;
-	border-radius: 5px;
-	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
 }
 
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} 
-
-.search-bar{
-	width: 100%;
-	max-width: 700px;
-	background: white;
-	color: black;
-	display: flex;
-	align-items: center;
-	border-radius: 60px;
-	padding: 10px 20px;
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
 }
 
-.search-bar input{
-	background: transparent;
-	flex: 1;
-	border:0;
-	outline: none;
-	padding: 24px 20px;
-	font-size: 20px;
-	color: black;
+.active, .dot:hover {
+  background-color: #717171;
 }
 
-::placeholder{
-	color: black;
-	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-.search-bar button img{
-	width: 25px;
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
-.search-bar button{
-	border: 0;
-	border-radius: 50%;
-	width: 60px;
-	height: 60px;
-	background: #29366b;
-	cursor: pointer;
+
+
+
+* {
+  box-sizing: border-box;
 }
 
-#valve{
-	padding: 10px;	
-	width: 200px; 
-	height:75px;
+
+.container {
+  position: relative;
 }
 
-footer{
-	background-color: #29366b;
-	color: black	;
-	border-radius: 5px;
+/
+.mySlides {
+  display: none;
 }
 
-footer div{
-	padding-top: 50px;
-	padding-left: 190px;
-	padding-bottom: 10px;
-	padding-right: 	10px;
-	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+.cursor {
+  cursor: pointer;
+}
+/
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 60%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
-.fotoflex{
-	display: flex;
-	justify-content: space-between;
-	padding-right: 200px;
-	padding-left: 150px;
 
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-image{
-	background-image: url(img/background3.jpg);
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-#bgimg{
-	background-image: url(img);
-	background-size: cover;
-	background-position: center;
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
