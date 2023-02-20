@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Top 10 Teams in CS:GO</title>
-	<link rel="stylesheet" type="text/css" href="css.style.css">
 	<style>
+        body{
+	       background: linear-gradient(to bottom, black 0%, grey 100%);
+        }
+
 		#navbar{
 	       list-style-type: none;
 	       overflow: hidden;
 	       margin: 0;
 	       padding: 0;
 	       overflow: hidden;
-	       background-color: #29366b;
+	       background-color: grey;
 	       border-radius: 5px;
         }
         #navbar li{
@@ -39,7 +41,120 @@
            padding: 10px;	
 	       width: 200px; 
 	       height:75px;
-}
+        }
+        footer{
+           background-color: black;
+	       color: white;
+	       border-radius: 5px;
+        }
+
+        footer div{
+	       padding-top: 50px;
+	       padding-left: 190px;
+	       padding-bottom: 10px;
+	       padding-right: 	10px;
+	       font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+        }
+
+        .fotoflex{
+	       display: flex;
+	       justify-content: space-between;
+	       padding-right: 200px;
+	       padding-left: 150px;
+        }
+        table {
+           border-collapse: collapse;
+           width: 50%;
+           margin-left: 500px;
+        }
+
+        th, td {
+           padding: 8px;
+           text-align: left;
+           background-color: white;
+           color: black;
+           border-bottom: 1px solid black;
+
+        }
+
+        th {
+           background-color: white;
+           color: black;
+           font-family: Consolas,monaco,monospace; 
+
+        }
+
+        tr:nth-child(even) {
+           background-color: white;
+           color:black;
+
+
+        }
+
+        td:first-child {
+           font-weight: bold;
+           color: black;
+           background-color: white;
+
+
+
+        }
+
+        td:nth-child(2) {
+           font-weight: bold;
+           color: black;
+           background-color: white;
+
+        }
+
+        td:nth-child(3) {
+        	font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
+        }
+
+        td:last-child {
+           font-weight: bold;
+           color: black;
+           background-color: white;
+
+        }
+
+        h1{
+        	background-color: black;
+        	color: white;
+        	padding: 5px;
+        	padding-left: 200px;
+        	margin-right: 450px;
+        	margin-left: 500px;
+        }
+        p{
+        	margin-left: 500px;
+        	margin-right: 450px;
+        	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+        	color: white; 
+        }
+        h2{
+        	background-color: black;
+        	color: white;
+        	padding: 5px;
+        	padding-left: 315px;
+        	margin-right: 450px;
+        	margin-left: 500px;
+
+        }
+
+        #text{
+        	color: white;
+        	margin-left: 500px;
+        	margin-right: 450px;
+        	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+        }
+
+        #txt1{
+        	color: white;
+        	margin-left: 500px;
+        	margin-right: 450px;
+        	font-family: Courier New,Courier,Lucida Sans Typewriter,Lucida Typewriter,monospace; 
+        }
 
 	</style>
 	<title>Teams</title>
@@ -47,98 +162,117 @@
 <body>
 		<ul id="navbar">
 		<img id="valve" src="img/valve.png" >
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/trophies.html">Trophies</a></li>
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/players.html">Players</a></li>
+		<li><a href="trophies.html">Trophies</a></li>
+		<li><a href="players.html">Players</a></li>
 		<li><a class="active" href="teams.html">Teams</a></li>
-		<li><a href="file:///C:/Users/HP/Desktop/CSGOhub/index.html">Home</a></li>
-	</ul>   
-</head>
-<body>
+		<li><a href="index.html">Home</a></li>
+	</ul>
 
-	<header>
-		<h1>Top 10 Teams in CS:GO</h1>
-	</header>
 
-	<!DOCTYPE html>
-<html>
-<head>
-	<title>Top 10 Teams in CS:GO</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
+   <br><br><br>
 
-	<header>
-		<h1>Top 10 Teams in CS:GO</h1>
-	</header>
 
-	<main>
+	<table>
+      <thead>
+        <tr>
+          <th>Logo</th>	
+          <th>Rank</th>
+          <th>Team</th>
+          <th>Points</th>
+        </tr>
+      </thead>
+    <tbody>
+        <tr>
+          <td><img src="img/g2logo.png" width="30px" height="30px"></td>
+          <td>1</td>
+          <td>G2</td>
+          <td>1000</td>
+        </tr>
+        <tr>
+          <td><img src="img/heroiclogo.png" width="30px" height="30px"></td>
+          <td>2</td>
+          <td>Heroic</td>
+          <td>760</td>
+        </tr>
+        <tr>
+        	<td><img src="img/liquidlogo.png" width="35px" height="35px"></td>
+        	<td>3</td>
+        	<td>Liquid</td>
+        	<td>610</td>
+        </tr>
+        <tr>
+        	<td><img src="img/fazelogo.png" width="30px" height="25px"></td>
+        	<td>4</td>
+        	<td>FaZe</td>
+        	<td>557</td>
+        </tr>
+        <tr>
+        	<td><img src="img/navilogo.png" width="30px" height="30px"></td>
+        	<td>5</td>
+        	<td>Natus Vincere</td>
+        	<td>460</td>
+        </tr>
+        <tr>
+        	<td><img src="img/vitalitylogo.png" width="30px" height="30px"></td>
+        	<td>6</td>
+        	<td>Vitality</td>
+        	<td>423</td>
+        </tr>
+        <tr>
+        	<td><img src="img/outsiderslogo.png" width="30px" height="30px"></td>
+        	<td>7</td>
+        	<td>Outsiders</td>
+        	<td>363</td>
+        </tr>
+        <tr>
+        	<td><img src="img/oglogo.png" width="30px" height="30px"></td>
+        	<td>8</td>
+        	<td>OG</td>
+        	<td>256</td>
+        </tr>
+        <tr>
+        	<td><img src="img/fnaticlogo.png" width="30px" height="20px"></td>
+        	<td>9</td>
+        	<td>fnatic</td>
+        	<td>183</td>
+        </tr>
+        <tr>
+        	<td><img src="img/complexitylogo.png" width="30px" height="30px"></td>
+        	<td>10</td>
+        	<td>Complexity</td>
+        	<td>171</td>
+        </tr>
 
-		<div class="team-list">
-			<div class="team-card">
-				<img src="images/astralis.png" alt="Astralis">
-				<h2>Astralis</h2>
-				<p>Denmark</p>
-				<p>Rank: 1</p>
-			</div>
-			<div class="team-card">
-				<img src="images/navi4.png" alt="Natus Vincere">
-				<h2>Natus Vincere</h2>
-				<p>Ukraine</p>
-				<p>Rank: 2</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="G2 Esports">
-				<h2>G2 Esports</h2>
-				<p>France</p>
-				<p>Rank: 3</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="Vitality">
-				<h2>Vitality</h2>
-				<p>France</p>
-				<p>Rank: 4</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="Evil Geniuses">
-				<h2>Evil Geniuses</h2>
-				<p>United States</p>
-				<p>Rank: 5</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="Heroic">
-				<h2>Heroic</h2>
-				<p>Denmark</p>
-				<p>Rank: 6</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="FURIA Esports">
-				<h2>FURIA Esports</h2>
-				<p>Brazil</p>
-				<p>Rank: 7</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="Complexity">
-				<h2>Complexity</h2>
-				<p>United States</p>
-				<p>Rank: 8</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="ENCE">
-				<h2>ENCE</h2>
-				<p>Finland</p>
-				<p>Rank: 9</p>
-			</div>
-			<div class="team-card">
-				<img src="https://via.placeholder.com/150" alt="Ninjas in Pyjamas">
-				<h2>Ninjas in Pyjamas</h2>
-				<p>Sweden</p>
-				<p>Rank: 10</p>
-			</div>
-	</main>
+    </tbody>
+    </table>
+
+    <h1>HLTV's world ranking of CS:GO Teams</h1>
+
+    <p>HLTV's world ranking ranks the best teams in the competitive field of Counter-Strike Global Offensive. The ranking is updated weekly, and teams move up or down based on their recent performance in competitive matches over the last 2 months.</p>
+
+
+    <h2>How is the ranking calculated?</h2>
+
+    <div id="text">
+    	The world ranking is based on teams' achievements over the past year (with severe decay in points throughout each month), recent form over the last 2 months and performance at the last 10 LAN events.
+    </div>
+    <br><
+    <div id="txt1">
+    	All of that is predicated around a 3-man core each team is required to have in order to retain their past points. Online matches and tournaments are included, but with a diminishing factor which means they cannot make a big difference among the top teams, and mainly serve to put new teams on the map.
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br>
 
 	<footer>
-		<p>&copy; 2023 Top 10 Teams in CS:GO</p>
-	</footer>
+   	
+         <div class="fotoflex">
+         <img src="img/Steam.png" width="90px" height="85px">
+         <img src="img/Mature.png" width="85px" height="85px">
+    </div>
+    <div>
+   		  © Valve Corporation, all rights deserved. Valve, the Valve logo, Source, the Source logo, Steam, the Steam logo, Counter-Strike, and the Counter-Strike logo are trademarks and/or registered trademarks of the Valve Corporation 
+   	</div> 
 
+   </footer>   
 </body>
 </html>
